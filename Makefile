@@ -1,7 +1,7 @@
-GPU=0
-CUDNN=0
-CUDNN_HALF=0
-OPENCV=0
+GPU=1
+CUDNN=1
+CUDNN_HALF=1
+OPENCV=1
 AVX=0
 OPENMP=0
 LIBSO=0
@@ -57,7 +57,7 @@ OS := $(shell uname)
 # ARCH= -gencode arch=compute_75,code=[sm_75,compute_75]
 
 # Tesla A100 (GA100), DGX-A100, A30, A100, RTX 3080
-# ARCH= -gencode arch=compute_80,code=[sm_80,compute_80]
+ARCH= -gencode arch=compute_80,code=[sm_80,compute_80]
 
 # GeForce RTX 30x0, 30x0 Ti, Tesla GA10x, RTX Axxxx, A2, A10, A16, A40
 # ARCH= -gencode arch=compute_86,code=[sm_86,compute_86]
